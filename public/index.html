@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- jQuery first, then Bootstrap JS. -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 actions">
+        <ul>
+          <li><strong>Bob Brandy</strong> just donated USD10</li>
+        </ul>
+
+          <div class="card card-inverse card-warning text-xs-center" style="">
+            <div class="card-block">
+              <blockquote class="card-blockquote">
+                <p><strong>Bob Brandy</strong> just donated USD10</p>
+                <footer><cite title="Source Title">Save the Whale!</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <script class='template' type='text/template'>
+      <div class="card card-inverse card-warning text-xs-center" style="display:none;">
+        <div class="card-block">
+          <blockquote class="card-blockquote">
+            <p><strong><%- name %></strong> just donated USD10</p>
+            <footer><cite title="Source Title">Save the Whale!</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="application.js"></script>
+
+    <script>
+    </script>
+
+
+  </body>
+</html>
