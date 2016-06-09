@@ -12,7 +12,7 @@ def data1
     email:  Faker::Internet.email,
     name: Faker::Name.name,
     country: Faker::Address.country,
-    page_id: '1',
+    page_id: "734",
     source: 'fb',
     referer: "http://google.com",
   }
@@ -28,7 +28,7 @@ def data2
     email:  Faker::Internet.email,
     name: Faker::Name.name,
     country: Faker::Address.country,
-    page_id: '1',
+    page_id: '764',
     source: 'fb',
     referer: "http://google.com",
   }

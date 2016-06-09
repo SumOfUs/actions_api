@@ -2,14 +2,12 @@ var app = require('express')(),
     http = require('http').Server(app),
     io = require('socket.io')(http);
 
-
 var redisOptions = {
   host: process.env.REDIS_URI,
   port: process.env.REDIS_PORT
 };
 
 var redis = require("redis").createClient(redisOptions);
-
 
 redis.subscribe('champaign:actions');
 

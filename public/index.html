@@ -19,9 +19,8 @@
       </div>
     </div>
 
-
     <script class='template' type='text/template'>
-      <div class="card card-inverse card-warning text-xs-center" style="display:none;">
+      <div class="card text-xs-center" style="display:none;">
         <div class="card-block">
           <blockquote class="card-blockquote">
            <% if ( type == 'donation' ){ %>
@@ -29,7 +28,8 @@
           <% } else { %>
               <p><strong><%- name %> from <%- country %></strong> just signed a petition.</p>
           <% } %>
-            <footer><cite title="Source Title"></cite></footer>
+
+          <footer><cite title="Source Title"><%- title %></cite></footer>
           </blockquote>
         </div>
       </div>
