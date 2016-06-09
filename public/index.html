@@ -15,20 +15,6 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 actions">
-        <ul>
-          <li><strong>Bob Brandy</strong> just donated USD10</li>
-        </ul>
-
-          <div class="card card-inverse card-warning text-xs-center" style="">
-            <div class="card-block">
-              <blockquote class="card-blockquote">
-                <p><strong>Bob Brandy</strong> just donated USD10</p>
-                <footer><cite title="Source Title">Save the Whale!</cite></footer>
-              </blockquote>
-            </div>
-          </div>
-
-
         </div>
       </div>
     </div>
@@ -38,8 +24,12 @@
       <div class="card card-inverse card-warning text-xs-center" style="display:none;">
         <div class="card-block">
           <blockquote class="card-blockquote">
-            <p><strong><%- name %></strong> just donated USD10</p>
-            <footer><cite title="Source Title">Save the Whale!</cite></footer>
+           <% if ( type == 'donation' ){ %>
+              <p><strong><%- name %> </strong> from <%- country %> just donated <%- currency %><%- amount %></p>
+          <% } else { %>
+              <p><strong><%- name %> from <%- country %></strong> just signed a petition.</p>
+          <% } %>
+            <footer><cite title="Source Title"></cite></footer>
           </blockquote>
         </div>
       </div>
