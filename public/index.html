@@ -1,17 +1,13 @@
 <html>
   <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   </head>
 
   <body>
-    <!-- jQuery first, then Bootstrap JS. -->
-
     <div class="container">
       <div class="row">
         <div class="col-sm-12 actions">
@@ -24,9 +20,9 @@
         <div class="card-block">
           <blockquote class="card-blockquote">
            <% if ( type == 'donation' ){ %>
-              <p><strong><%- name %> </strong> from <%- country %> just donated <%- currency %><%- amount %></p>
+              <p><strong><%- first_name %> </strong> from <%- country %> just donated <%- currency %><%- amount %></p>
           <% } else { %>
-              <p><strong><%- name %> from <%- country %></strong> just signed a petition.</p>
+              <p><strong><%- first_name %> from <%- country %></strong> just signed a petition.</p>
           <% } %>
 
           <footer><cite title="Source Title"><%- title %></cite></footer>
@@ -36,15 +32,8 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="application.js"></script>
-
-    <script>
-    </script>
-
-
   </body>
 </html>
