@@ -4,7 +4,7 @@ var template = _.template(
   $('script.template').html()
 );
 
-var socket = io();
+var socket = io('http://live-actions-production.cwctan5wfu.us-west-2.elasticbeanstalk.com', { transports: ["websocket"]} );
 
 socket.on('actions', function(msg){
   var data = JSON.parse(msg);
@@ -14,7 +14,7 @@ socket.on('actions', function(msg){
   $actions.prepend(actionHtml);
 
   actionHtml.fadeIn(function(){
-    $('.card:gt(50)').remove()
+    $('.card:gt(50)').remove();
   });
 });
 
