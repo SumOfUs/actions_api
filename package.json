@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bundle install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "faker": "ruby faker.rb"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +16,8 @@
     "express": "^4.13.4",
     "redis": "^2.6.1",
     "socket.io": "^1.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
   }
 }
