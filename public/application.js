@@ -4,7 +4,7 @@ var template = _.template(
   $('script.template').html()
 );
 
-var socket = io('http://live-actions-production.cwctan5wfu.us-west-2.elasticbeanstalk.com' );
+var socket = io('https://actions-api.sumofus.org');
 
 socket.on('actions', function(msg){
   var data = JSON.parse(msg);
